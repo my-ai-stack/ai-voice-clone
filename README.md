@@ -4,9 +4,10 @@
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/walidsobhie-code/ai-voice-clone)](https://github.com/walidsobhie-code/ai-voice-clone/stargazers)
-
-[🤗 HuggingFace 🚀 Try Live Demo](https://huggingface.co/spaces/my-ai-stack/ai-voice-clone)
+[![Stars](https://img.shields.io/github/stars/my-ai-stack/ai-voice-clone)](https://github.com/my-ai-stack/ai-voice-clone/stargazers)
+[![PyPI version](https://img.shields.io/pypi/v/ai-voice-clone)](https://pypi.org/project/ai-voice-clone/)
+[![Downloads](https://img.shields.io/pypi/dm/ai-voice-clone)](https://pypi.org/project/ai-voice-clone/)
+[🤗 HuggingFace](https://img.shields.io/badge/HuggingFace-spaces-blue?style=flat-square)](https://huggingface.co/spaces/my-ai-stack/ai-voice-clone)
 
 ## 🎯 What It Does
 
@@ -33,26 +34,18 @@ Step 3: Generate anything   →  "Hello, I am cloned!"
 
 ### Install
 ```bash
-git clone https://github.com/walidsobhie-code/ai-voice-clone.git
-cd ai-voice-clone
-pip install -r requirements.txt
+pip install ai-voice-clone
 ```
 
 ### Clone a Voice
 ```bash
-# Upload 10-30 seconds of clear audio
 python clone_voice.py --input my_voice.wav --output my_cloned_voice
-
-# Output:
-# 🎤 Loading audio: my_voice.wav
-# 🔄 Cloning voice...
-# ✅ Voice cloned successfully!
 ```
 
 ### Generate Speech
 ```bash
 python synthesize.py --model my_cloned_voice.wav \
-    --text "Hello everyone, this is my cloned voice!" \
+    --text "Hello, I am cloned!" \
     --output hello.wav
 ```
 
@@ -112,7 +105,7 @@ print(result)
 ## 🎯 Use Cases
 
 | Industry | Use Case |
-|----------|----------|
+|----------|-----------|
 | 🎬 **Content** | Create videos with any voice |
 | 🎧 **Podcast** | Clone voices for narration |
 | ♿ **Accessibility** | Read text in any voice |
@@ -125,13 +118,13 @@ print(result)
 ```
 Original Audio (10-30s)
          ↓
- XTTS Encoder (extracts voiceprint)
+XTTS Encoder (extracts voiceprint)
          ↓
- Latent Space Representation
+Latent Space Representation
          ↓
- XTTS Decoder (generates new audio)
+XTTS Decoder (generates new audio)
          ↓
- Your Cloned Voice Saying Anything!
+Your Cloned Voice Saying Anything!
 ```
 
 ## 🐳 Docker
@@ -161,6 +154,7 @@ ai-voice-clone/
 ## ⚠️ Ethical Use
 
 This tool should only be used ethically:
+
 - ✅ With consent of the voice owner
 - ✅ For legitimate purposes (accessibility, entertainment)
 - ❌ NOT for fraud, impersonation, or deception
@@ -175,16 +169,15 @@ If this helped you, please star the repo!
 
 ---
 
-**Built with ❤️ by [walidsobhie-code](https://github.com/walidsobhie-code)**
+**Built with ❤️ by [my-ai-stack](https://github.com/my-ai-stack)**
 
 ## 🗺️ Roadmap
 
-- [ ] [Planned] Web version / hosted demo
-- [ ] [Planned] API endpoint for production use
-- [ ] [Planned] Support for more languages
-- [ ] [In Progress] Performance optimizations
-- [ ] [Done] Gradio web interface
-- [ ] [Done] Docker deployment
+- [ ] Web version / hosted demo
+- [ ] API endpoint for production use
+- [ ] Support for more languages
+- [x] Gradio web interface
+- [x] Docker deployment
 
 ## 🏢 Used By
 
@@ -195,5 +188,3 @@ If this helped you, please star the repo!
 ## 🤝 Contributors
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-[![GitHub Contributors](https://contrib.rocks/image?repo=my-ai-stack/ai-voice-clone)](https://github.com/my-ai-stack/ai-voice-clone/graphs/contributors)
