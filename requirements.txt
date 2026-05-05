@@ -1,8 +1,14 @@
-TTS>=0.20.0
-librosa>=0.10.0
-soundfile>=0.12.0
-numpy>=1.24.0
-torch>=2.0.0
-tqdm>=4.65.0
-pydantic>=2.0.0
-gradio>=4.0.0
+# Minimal requirements for Hugging Face Spaces MCP Server
+# This file is read by default by HF Spaces
+
+# FastAPI for HTTP endpoint
+fastapi>=0.100.0
+uvicorn>=0.20.0
+httpx>=0.24.0
+
+# MCP dependencies  
+mcp[cli]>=1.2.0
+
+# For TTS integration (optional, install separately if needed)
+# TTS - installed via pip if needed
+# torch - installed via pip if needed
